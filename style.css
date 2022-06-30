@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr  4fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.side-bar{
+    grid-column: 1 /2;
+    grid-row: 1 / 3;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-gap: 35px;
+    background-color: rgba(25,146,212,255);
+    color: white; 
+    height: 220%; 
+    font-family: 'Roboto', sans-serif;
+}
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#Dashboard {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+.dash-image {
+    padding: 0 0.3rem;
+    
+}
+
+.first-row-items > li , .second-row-items > li {
+    display: flex;
+    flex-direction: row;
+    padding: 0.4em 1rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.second-row-items {
+    margin-top: 2rem;
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 3 / 1;
+    position: relative;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+    height: 40%;
+}
+.search-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.search-input > form {
+    display: flex;
+    flex-direction: row ;
+    padding: 1.4rem;
+}
+
+.magnify {
+    width: 25px;
+    height: 25px;
+}
+.bell,.ringtone{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid rgb(197, 197, 197);
+    margin: 20px 10px;
+    
+    
+
+}
+.heading {
+    width: 130px;
+    height: 40px;
+    margin: 1.5rem 1rem;
+    font-size: 1.2rem;
+    margin-right: -4.5rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#search {
+    width: 100vh;
+    max-width: 471px;
+    height: 150%;
+    border-radius: 15px;
+    background-color: rgba(226,232,240,255);
+    border: none;
+    margin-left: 0.7rem;
+}
+
+.search-flex {
+    display: flex;
+    flex-direction: row;
+}
+.icon-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: -7rem;
+    font-size: 1rem;
+}
+#Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.search-heading {
+    margin-bottom: 1rem;
+    display: flex;
+}
+.content {
+    display: flex;
+    margin-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.profile-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid rgb(197, 197, 197);
+
+}
+.content-under-image {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: -1rem;
+    padding: 0 1rem;
+
+}
+.content-right-menu {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+
+}
+.icon-part-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+    
+
+}
+.card-2 {
+    margin-top: 1.4rem;
+}
+.icon-part-content > li {
+    width: 30%;
+    height: 8%;
+    list-style: none;
+    display: flex;
+    margin: 0 1rem;
+    background-color:rgba(25,146,212,255);
+    color:white;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.5rem  1rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+.card-container {
+    background-color: rgba(226,232,240,255);
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    padding: 10px 10px 40px 20px;
+    margin-top: -17rem;
+    height: 165%;
+
+
+}
+.card {
+
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgb(175 175 175);
+    padding: 0 1rem;
+    margin: 0.6rem;
+    border-radius: 15px;
+    background-image: linear-gradient(left, #88c7ff, #88c7ff 2%, transparent 2%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, #88c7ff, #88c7ff 2%, transparent 2%, transparent 100%);
+}
+
+.display-card {
+    grid-column: 1/3;
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+
+.card-spacing {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+#card-heading {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+#card-box-header{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+.card-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 2rem;
+
+}
+.card-icons > li {
+    list-style: none;
+    margin: 1rem  1rem;
+  
+}
+.card-icons > li > img {
+    list-style: none;
+
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.Announcements-container  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-bottom: 10px;
+    height: 30%;
+    margin-top: 2.5rem;
+    padding: -3rem;
+}
+.Trending-container {
+    grid-column: 2 / 3;
+    grid-row: 3 / 2;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.Announcements-card , .trending-card {
+    background-color: white;
+    box-shadow: 0px 2px 3px rgb(175 175 175);
+    padding: 20px 20px 20px 25px;
+    border-radius: 5px;
+    width: 27%;
+    height: 80%;
+    padding: 20px 20px 20px 25px;
+    min-width: 231px;
+   
+  
+}
+.announcement-heading {
+    font-weight: bolder;
+    font-size: 14px;
+    margin-top: 9px;
+    margin-bottom: -12px;
+
+}
+.trending-heading {
+    font-size: 20px; 
+    font-weight: bolder;
+    margin-bottom: 12px;   
+    
+  
+}
+.announcement-heading {
+    font-weight: bolder;
+    margin-bottom: -1rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+.Annoucement {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: -2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: -10rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.A-paragraph {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.content-beside-image {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: -1rem;
+    padding: 0 1rem;
+
+}
+#T-e {
+    margin-bottom: -1rem; 
+    font-size: 13px; 
+}
+#T-p {
+    font-size: 13px;
+
+}
+.Trenting-profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid rgb(197, 197, 197);
+
+}
+
+
+
+
+
+
